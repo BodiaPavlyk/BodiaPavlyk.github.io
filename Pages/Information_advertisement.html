@@ -7,6 +7,10 @@
     <title>Details</title>
     <script src="https://kit.fontawesome.com/261187a25c.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src="../JS/requests.js"></script>
+    <script type="text/javascript">
+        window.onload = getAnnouncementInfo;
+    </script>
 </head>
 <body>
     <nav>
@@ -29,29 +33,29 @@
             <ul>
                 <li class="point">
                     <div class="text-1"><b>Title:</b> </div>
-                    <div class="info">Finding a Junior Frontend developer</div>
+                    <div class="info" id="title"></div>
                 </li>
                 <li class="point">
                     <div class="text-1"><b>Theme:</b> </div>
-                    <div class="info">IT</div>
+                    <div class="info" id="theme"></div>
                 </li>
                 <li class="point">
                     <div class="text-1"><b>Type:</b> </div>
-                    <div class="info">Job offer</div>
+                    <div class="info" id="type"></div>
                 </li>
                 <li class="point">
                     <div class="text-1"><b>Description:</b> </div>
-                    <div class="info">Finding a person, ready for working and improving</div>
+                    <div class="info" id="description"></div>
                 </li>
             </ul>
         </div>
         <div class="info-author-date">
             <div class="text-1"><b>Author`s email:</b> </div>
-            <div class="info">user_example@gmail.com</div>
+            <div class="info" id="email"></div>
             <div class="text-1"><b>Location:</b> </div>
-            <div class="info">Lviv, Heroiv Upa street, 7</div>
+            <div class="info" id="location"></div>
             <div class="text-1"><b>Date of publication:</b> </div>
-            <div class="info">13:55:57, 13.03.2021</div>
+            <div class="info" id="date"></div>
         </div>
     </div>
 </body>

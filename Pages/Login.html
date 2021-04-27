@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../styles/Login.css">
+    <script type = "text/javascript" src="../JS/requests.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -17,12 +18,7 @@
             <input class="input_form" type="email" id="idEmail" placeholder="Email"/>
             <input class="input_form" type="password" id="idPassword" placeholder="Password"/>
         </div>
-        <div class="text_forms">
-            <input type="checkbox" id="remember" class="checkbox"/>
-            <div class="text_remember_me">Remember me</div>
-            <a href="Reset_password_input_email.html" class="text_reset"><u>Forgot the password?</u></a>
-        </div>
-        <button class="button button_submit" onclick="location.href='Home_authorized.html'">Login</button>
+        <button class="button button_submit" onclick="login()">Login</button>
     </div>
 </div>
 </body>

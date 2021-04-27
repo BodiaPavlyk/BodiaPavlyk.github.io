@@ -6,6 +6,10 @@
     <title>Profile</title>
     <script src="https://kit.fontawesome.com/261187a25c.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src="../JS/requests.js"></script>
+    <script type="text/javascript">
+        window.onload = getUser;
+    </script>
 </head>
 <body>
 <nav>
@@ -26,15 +30,17 @@
     <div class="block">
         <div class="block1">
             <ul>
-                <li class="description">Bohdan Pavlyk (@bodia_pavlyk)</li>
-                <li class="description">Email: bogdan2002mih@gmail.com</li>
-                <li class="description">Amount of published advertisements: 3</li>
+                <div class="description"><b>First name: </b></div><li class="description" id="first_name"></li>
+                <div class="description"><b>Last name: </b></div><li class="description" id="last_name"></li>
+                <div class="description"><b>Username: </b></div><li class="description" id="user_name"></li>
+                <div class="description"><b>Email: </b></div><li class="description" id="email"></li>
+                <div class="description"><b>Count of announcements: </b></div><li class="description" id="count"></li>
             </ul>
         </div>
         <div class="block2">
             <button class="edit-btn" onclick="location.href='Edit_profile.html'">Edit profile</button>
-            <button class="delete-btn" onclick="location.href='Register.html'">Delete profile</button>
-            <button class="logout" onclick="location.href='Login.html'">Logout</button>
+            <button class="delete-btn" onclick="deleteUser()">Delete profile</button>
+            <button class="logout" onclick="logout()">Logout</button>
         </div>
     </div>
 </body>

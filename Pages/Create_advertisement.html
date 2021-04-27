@@ -7,6 +7,7 @@
     <title>Create advertisement</title>
     <script src="https://kit.fontawesome.com/261187a25c.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src="../JS/requests.js"></script>
 </head>
 <body>
     <nav>
@@ -46,13 +47,13 @@
                 <input type="text" id="location" class="input-data"/>
             </li>
             <li>
-                <textarea name="Text1" cols="40" rows="6" class="input-description"></textarea>
+                <textarea name="Text1" id="description" cols="40" rows="6" class="input-description"></textarea>
             </li>
         </ul>
     </div>
     <div class="btns">
         <button class="button-end" onclick="location.href='Home_authorized.html'">Cancel</button>
-        <button class="button-end" onclick="location.href='Home_authorized.html'"><b>Submit</b></button>
+        <button class="button-end" onclick="createAdv()"><b>Submit</b></button>
     </div>
 </body>
 </html>

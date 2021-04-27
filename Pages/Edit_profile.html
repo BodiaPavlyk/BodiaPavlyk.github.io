@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../styles/Profile.css">
     <link rel="stylesheet" href="../styles/Advertisements.css">
+    <script type = "text/javascript" src="../JS/requests.js"></script>
+    <script type="text/javascript">
+        window.onload = editUserInfo;
+    </script>
     <title>Edit profile</title>
     <script src="https://kit.fontawesome.com/261187a25c.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -35,28 +39,28 @@
         </ul>
         <ul class="input-new-data">
             <li>
-                <input type="text" id="username" class="input-data" value="bodia_pavlyk"/>
+                <input type="text" id="username" class="input-data"/>
             </li>
             <li>
-                <input type="text" id="first_name" class="input-data" value="Bohdan"/>
+                <input type="text" id="first_name" class="input-data"/>
             </li>
             <li>
-                <input type="text" id="last_name" class="input-data" value="Pavlyk"/>
+                <input type="text" id="last_name" class="input-data"/>
             </li>
             <li>
-                <input type="text" id="email" class="input-data" value="bogdan2002mih@gmail.com"/>
+                <input type="text" id="email" class="input-data"/>
             </li>
             <li>
-                <input type="password" id="password" class="input-data" value="password"/>
+                <input type="password" id="password" class="input-data"/>
             </li>
             <li>
-                <input type="password" id="password2" class="input-data" value="password"/>
+                <input type="password" id="password2" class="input-data"/>
             </li>
         </ul>
     </div>
     <div class="btns">
         <button class="button-end" onclick="location.href='Profile.html'">Cancel</button>
-        <button class="button-end" onclick="location.href='Profile.html'"><b>Submit</b></button>
+        <button class="button-end" onclick="editProfile()"><b>Submit</b></button>
     </div>
 </body>
 </html>

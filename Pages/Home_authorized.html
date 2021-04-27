@@ -6,6 +6,10 @@
     <title>Home</title>
     <script src="https://kit.fontawesome.com/261187a25c.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src="../JS/requests.js"></script>
+    <script type="text/javascript">
+        window.onload = getAllAnouncements;
+    </script>
 </head>
 <body>
     <nav>
@@ -36,43 +40,6 @@
             </div>
         </div>
     </div>
-    <ul class="list-of-advertisements">
-        <li class="advertisement">
-            <div class="advertisement-text">
-                <div class="title-of-advertisement">Example 1</div>
-                <div class="text_of_advertisement"><b>Theme:</b> example 1</div>
-                <div class="text_of_advertisement"><b>Type:</b> example 1</div>
-                <div class="text_of_advertisement"><b>Location:</b> example 1</div>
-            </div>
-            <div class="advertisement-btns">
-                <button class="button_adv" onclick="location.href='Information_advertisement.html'">Details</button>
-                <button class="button_adv" onclick="location.href='Saved_screen.html'">Save</button>
-            </div>
-        </li>
-        <li class="advertisement">
-            <div class="advertisement-text">
-                <div class="title-of-advertisement">Example 2</div>
-                <div class="text_of_advertisement"><b>Theme:</b> example 2 </div>
-                <div class="text_of_advertisement"><b>Type:</b> example 2 </div>
-                <div class="text_of_advertisement"><b>Location:</b> example 2 </div>
-            </div>
-            <div class="advertisement-btns">
-                <button class="button_adv" onclick="location.href='Information_advertisement.html'">Details</button>
-                <button class="button_adv" onclick="location.href='Saved_screen.html'">Save</button>
-            </div>
-        </li>
-        <li class="advertisement">
-            <div class="advertisement-text">
-                <div class="title-of-advertisement">Example 3</div>
-                <div class="text_of_advertisement"><b>Theme:</b> example 3</div>
-                <div class="text_of_advertisement"><b>Type:</b> example 3</div>
-                <div class="text_of_advertisement"><b>Location:</b> example 3</div>
-            </div>
-            <div class="advertisement-btns">
-                <button class="button_adv" onclick="location.href='Information_advertisement.html'">Details</button>
-                <button class="button_adv" onclick="location.href='Saved_screen.html'">Save</button>
-            </div>
-        </li>
-    </ul>
+    <ul class="list-of-advertisements" id="list_of_advertisements"></ul>
 </body>
 </html>
